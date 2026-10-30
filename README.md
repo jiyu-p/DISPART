@@ -1,4 +1,4 @@
-# dispart
+# DISPART
 
 Classifier-partitioned *de novo* transcriptome assembly.
 RNA-seq reads are classified into 45 transcript clusters plus an unassigned class with a
