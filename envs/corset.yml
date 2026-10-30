@@ -1,0 +1,7 @@
+# Corset clustering
+name: dispart-corset
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - corset=1.09

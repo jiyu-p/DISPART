@@ -1,0 +1,21 @@
+# Tokenization, classifier inference and read split (scripts/01_tokenize.py, scripts/02_classify.py,
+# scripts/03_split_reads.py).
+# Versions match the environment used for the paper run (GPU server, Python 3.10.14).
+name: dispart-infer
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - torch==2.11.0
+      - transformers==4.57.3   # must be <5: the model code fails to load on 5.x
+      - einops==0.8.1
+      - numpy==1.26.4
+      - pandas
+      - pyarrow
+      - tqdm==4.67.3
+# Optional, GPU only. The paper inference used the flash-attn 2.8.3.post1 C++ varlen kernel.
+# Without flash-attn, attention is computed differently (02_classify.py uses PyTorch attention on CPU),
+# so the top-1 class can differ for a small number of reads.
+#   pip install flash-attn==2.8.3.post1 --no-build-isolation   # needs a CUDA build matching torch

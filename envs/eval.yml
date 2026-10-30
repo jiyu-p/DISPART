@@ -1,0 +1,18 @@
+# Post-processing and DEG
+name: dispart-eval
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - cd-hit=4.8.1
+  - cap3=10.2011
+  - seqkit=2.13.0
+  - salmon=1.11.4
+  - blast=2.17.0
+  - r-base=4.5.2
+  - bioconductor-deseq2=1.50.2
+  - bioconductor-tximport=1.38.2
+  - r-jsonlite

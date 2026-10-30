@@ -1,0 +1,13 @@
+out/
+RELEASE_PLAN.md
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.DS_Store
+weights/classifier/*.safetensors
+config.local.sh
+run_minitest.log
+scripts/optional/
+envs/eval_optional.yml

@@ -1,0 +1,3 @@
+assembly	n_contigs	n50	mean_length	ref_DEGs	deg_genes	TP	precision_pct	recall_pct	f1
+partitioned	219	1407	1092.8	30	26	26	100	86.67	92.8591
+full	257	1385	1046.9	30	25	24	96	80	87.2727

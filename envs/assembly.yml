@@ -1,0 +1,8 @@
+# Trinity assembly
+name: dispart-assembly
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - trinity=2.15.2
+  - salmon=1.11.4
