@@ -83,10 +83,8 @@ and each sample was downsampled to at most 70,000 pairs.
 ## Third-party code
 
 The model code in `weights/classifier/` is from
-[DNABERT-2](https://huggingface.co/zhihan1996/DNABERT-2-117M)
-(revision `7bce263b15377fc15361f52cfab88f8b586abda0`, Apache License 2.0, see
-`weights/classifier/LICENSE_DNABERT2`). `bert_padding.py` and `configuration_bert.py` are
-unmodified; `bert_layers.py` and `flash_attn_triton.py` are modified (noted at the top of each file).
+[DNABERT-2](https://huggingface.co/zhihan1996/DNABERT-2-117M) (Apache License 2.0,
+see `weights/classifier/LICENSE_DNABERT2`). Modified files are noted at the top of each file.
 
 Zhou Z, et al. DNABERT-2: Efficient Foundation Model and Benchmark for Multi-Species Genome.
 ICLR 2024. arXiv:2306.15006.
